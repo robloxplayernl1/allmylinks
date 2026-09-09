@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mijn Links</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🔗 Mijn Links</h1>
+      <p>Al mijn handige websites op één plek</p>
+    </header>
+
+    <nav id="nav"></nav>
+    <main id="pages"></main>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="box">
+      <h2 id="modalTitle">Toevoegen</h2>
+      <label>Naam</label>
+      <input id="nameInput" placeholder="Naam">
+      <label id="urlLabel">URL</label>
+      <input id="urlInput" placeholder="https://voorbeeld.nl">
+      <label id="iconLabel">Icoon</label>
+      <input id="iconInput" placeholder="🔗">
+      <div class="actions">
+        <button onclick="closeModal()">Annuleren</button>
+        <button class="primary" onclick="confirmAdd()">Toevoegen</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
